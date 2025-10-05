@@ -15,7 +15,7 @@ os.makedirs(save_dir, exist_ok=True)
 
 # ========== Hyperparams ==========
 batch_size = 1024
-lr = 2e-5
+lr = 2e-4
 num_epochs = 300
 latent_dim = 128
 sample_every = 5
