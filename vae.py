@@ -20,7 +20,7 @@ num_epochs = 300
 latent_dim = 128
 sample_every = 5
 num_sample_images = 8
-image_size = 128
+image_size = 64
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 transform = transforms.Compose([
