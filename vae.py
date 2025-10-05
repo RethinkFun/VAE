@@ -167,10 +167,9 @@ def train():
             loss.backward()
             optim.step()
 
-            batch_size = imgs.size(0)
-            epoch_loss += loss.item() * batch_size
-            epoch_recon += recon_l.item() * batch_size
-            epoch_kld += kld.item() * batch_size
+            epoch_loss += loss.item()
+            epoch_recon += recon_l.item()
+            epoch_kld += kld.item()
             global_step += 1
 
             if batch_idx % 100 == 0:
