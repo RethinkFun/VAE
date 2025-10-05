@@ -153,7 +153,7 @@ def train():
     model = ConvVAE(latent_dim=latent_dim,image_size=image_size).to(device)
     optim = torch.optim.Adam(model.parameters(), lr=lr)
     global_step = 0
-    for epoch in range(136, num_epochs + 1):
+    for epoch in range(1, num_epochs + 1):
         model.train()
         epoch_loss = 0.0
         epoch_recon = 0.0
